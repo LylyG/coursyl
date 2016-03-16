@@ -25,16 +25,16 @@ function hideRow() {
   row[row.length - 1].style.visibility = "hidden";
 };
 
-// function showLastRow() {
-//   var row = document.getElementsByClassName("row");
-//   var lastRow = row[row.length - 1].cloneNode(true);
-//   row.appendChild(lastRow);
-// };
-
 function showLastRow() {
   var row = document.getElementsByClassName("row");
-  row[row.length - 1].style.visibility = "block";
+  var lastRow = row[row.length - 1].cloneNode(true);
+  row.appendChild(lastRow);
 };
+
+// function showLastRow() {
+//   var row = document.getElementsByClassName("row");
+//   row[row.length - 1].style.visibility = "block";
+// };
 
 function deleteRow () {
   var deleteGrade = document.getElementsByClassName("row");
