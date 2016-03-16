@@ -37,7 +37,10 @@ function showLastRow() {
 // };
 
 function deleteRow () {
-  var deleteGrade = document.getElementsByClassName("row");
+  var deleteGrade = event.target.parentElement.parentElement.parentElement;
+  var markDestroy = event.target.parentElement.lastElementChild;
+  hideRow.style.display = "none";
+  markDestroy.checked = true;
 };
 
 function smoothScrolling () {
